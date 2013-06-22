@@ -167,9 +167,25 @@
     <Content Include="App\durandal\widget.js" />
     <Content Include="App\main-built.js" />
     <Content Include="App\main.js" />
+    <TypeScriptCompile Include="App\viewmodels\tsinstance.ts" />
     <Content Include="App\viewmodels\flickr.js" />
     <Content Include="App\viewmodels\shell.js" />
+    <TypeScriptCompile Include="App\viewmodels\tsctor.ts" />
+    <Content Include="App\viewmodels\tsctor.js">
+      <DependentUpon>tsctor.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\tsctor.min.js">
+      <DependentUpon>tsctor.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\tsinstance.js">
+      <DependentUpon>tsinstance.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\tsinstance.min.js">
+      <DependentUpon>tsinstance.ts</DependentUpon>
+    </Content>
     <Content Include="App\viewmodels\welcome.js" />
+    <Content Include="App\views\tsinstance.html" />
+    <Content Include="App\views\tsctor.html" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr.html" />
     <Content Include="App\views\shell.html" />
@@ -196,6 +212,12 @@
     <Content Include="Content\font\fontawesome-webfont.ttf" />
     <Content Include="Content\font\fontawesome-webfont.eot" />
     <Content Include="Content\font\FontAwesome.otf" />
+    <Content Include="App\viewmodels\tsctor.js.map">
+      <DependentUpon>tsctor.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\tsinstance.js.map">
+      <DependentUpon>tsinstance.ts</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -205,6 +227,10 @@
     <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
+    <Content Include="Scripts\typings\durandal\durandal.d.ts" />
+    <Content Include="Scripts\typings\jquery\jquery.d.ts" />
+    <Content Include="Scripts\typings\knockout\knockout.amd.d.ts" />
+    <Content Include="Scripts\typings\knockout\knockout.d.ts" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

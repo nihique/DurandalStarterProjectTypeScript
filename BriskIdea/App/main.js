@@ -21,6 +21,8 @@ define(['durandal/app', 'durandal/viewLocator', 'durandal/system', 'durandal/plu
             router.useConvention();
             router.mapNav('welcome');
             router.mapNav('flickr');
+            router.mapNav('tsctor');
+            router.mapNav('tsinstance');
 
             app.adaptToDevice();
 
