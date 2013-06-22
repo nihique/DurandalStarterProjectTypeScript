@@ -149,9 +149,6 @@
     <Content Include="App\bootstrapper.js">
       <DependentUpon>bootstrapper.ts</DependentUpon>
     </Content>
-    <Content Include="App\bootstrapper.min.js">
-      <DependentUpon>bootstrapper.ts</DependentUpon>
-    </Content>
     <Content Include="App\durandal\amd\almond-custom.js" />
     <Content Include="App\durandal\amd\optimizer.exe" />
     <Content Include="App\durandal\amd\r.js" />
@@ -179,13 +176,7 @@
     <Content Include="App\main.js">
       <DependentUpon>main.ts</DependentUpon>
     </Content>
-    <Content Include="App\main.min.js">
-      <DependentUpon>main.ts</DependentUpon>
-    </Content>
     <Content Include="App\model\person.js">
-      <DependentUpon>person.ts</DependentUpon>
-    </Content>
-    <Content Include="App\model\person.min.js">
       <DependentUpon>person.ts</DependentUpon>
     </Content>
     <Content Include="App\viewmodels\flickr.js" />
@@ -194,13 +185,7 @@
     <Content Include="App\viewmodels\tsctor.js">
       <DependentUpon>tsctor.ts</DependentUpon>
     </Content>
-    <Content Include="App\viewmodels\tsctor.min.js">
-      <DependentUpon>tsctor.ts</DependentUpon>
-    </Content>
     <Content Include="App\viewmodels\tsinstance.js">
-      <DependentUpon>tsinstance.ts</DependentUpon>
-    </Content>
-    <Content Include="App\viewmodels\tsinstance.min.js">
       <DependentUpon>tsinstance.ts</DependentUpon>
     </Content>
     <Content Include="App\viewmodels\welcome.js" />

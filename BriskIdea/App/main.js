@@ -4,7 +4,7 @@ requirejs.config({
     }
 });
 
-require(['bootstrapper'], function (bootstrapper) {
+define(['bootstrapper'], function (bootstrapper) {
     bootstrapper.run();
 });
 //@ sourceMappingURL=main.js.map
