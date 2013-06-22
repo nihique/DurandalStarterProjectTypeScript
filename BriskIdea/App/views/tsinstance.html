@@ -2,6 +2,10 @@
     <h2 data-bind="html:displayName"></h2>
     <blockquote data-bind="html:description"></blockquote>
     <div data-bind="text: random"></div>
+    <p>
+        <strong>Person:</strong>
+        <span data-bind="text: person.fullName()" />
+    </p>
     <h3>Features</h3>
     <ul data-bind="foreach: features">
         <li data-bind="html: $data"></li>

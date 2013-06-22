@@ -5,7 +5,6 @@ define(["require", "exports"], function(require, exports) {
             this.description = 'Description';
             this.random = Math.round(Math.random() * 100);
             this.features = ['feature1', 'feature2'];
-            debugger;
         }
         Welcome.prototype.viewAttached = function (view) {
         };

@@ -1,6 +1,6 @@
-define(["require", "exports", 'durandal/system'], function(require, exports, __system__) {
-    /// <reference path="../../Scripts/typings/durandal/durandal.d.ts" />
+define(["require", "exports", 'durandal/system', '../model/person'], function(require, exports, __system__, __person__) {
     var system = __system__;
+    var person = __person__;
 
     var Welcome = (function () {
         function Welcome() {
@@ -8,10 +8,10 @@ define(["require", "exports", 'durandal/system'], function(require, exports, __s
             this.description = 'Description';
             this.features = ['feature1', 'feature2'];
             this.random = Math.round(Math.random() * 100);
-            system.log('test');
-            debugger;
+            this.person = new person.Person('Martin', 'Kovarik');
         }
-        Welcome.prototype.viewAttached = function (view) {
+        Welcome.prototype.activate = function () {
+            system.log('activate ts instance');
         };
         return Welcome;
     })();

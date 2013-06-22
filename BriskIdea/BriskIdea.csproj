@@ -145,6 +145,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\bootstrapper.ts" />
+    <Content Include="App\bootstrapper.js">
+      <DependentUpon>bootstrapper.ts</DependentUpon>
+    </Content>
+    <Content Include="App\bootstrapper.min.js">
+      <DependentUpon>bootstrapper.ts</DependentUpon>
+    </Content>
     <Content Include="App\durandal\amd\almond-custom.js" />
     <Content Include="App\durandal\amd\optimizer.exe" />
     <Content Include="App\durandal\amd\r.js" />
@@ -166,8 +173,21 @@
     <Content Include="App\durandal\viewModelBinder.js" />
     <Content Include="App\durandal\widget.js" />
     <Content Include="App\main-built.js" />
-    <Content Include="App\main.js" />
     <TypeScriptCompile Include="App\viewmodels\tsinstance.ts" />
+    <TypeScriptCompile Include="App\model\person.ts" />
+    <TypeScriptCompile Include="App\main.ts" />
+    <Content Include="App\main.js">
+      <DependentUpon>main.ts</DependentUpon>
+    </Content>
+    <Content Include="App\main.min.js">
+      <DependentUpon>main.ts</DependentUpon>
+    </Content>
+    <Content Include="App\model\person.js">
+      <DependentUpon>person.ts</DependentUpon>
+    </Content>
+    <Content Include="App\model\person.min.js">
+      <DependentUpon>person.ts</DependentUpon>
+    </Content>
     <Content Include="App\viewmodels\flickr.js" />
     <Content Include="App\viewmodels\shell.js" />
     <TypeScriptCompile Include="App\viewmodels\tsctor.ts" />
@@ -218,6 +238,15 @@
     <Content Include="App\viewmodels\tsinstance.js.map">
       <DependentUpon>tsinstance.ts</DependentUpon>
     </Content>
+    <Content Include="App\model\person.js.map">
+      <DependentUpon>person.ts</DependentUpon>
+    </Content>
+    <Content Include="App\main.js.map">
+      <DependentUpon>main.ts</DependentUpon>
+    </Content>
+    <Content Include="App\bootstrapper.js.map">
+      <DependentUpon>bootstrapper.ts</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -231,6 +260,7 @@
     <Content Include="Scripts\typings\jquery\jquery.d.ts" />
     <Content Include="Scripts\typings\knockout\knockout.amd.d.ts" />
     <Content Include="Scripts\typings\knockout\knockout.d.ts" />
+    <Content Include="Scripts\typings\requirejs\require.d.ts" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
