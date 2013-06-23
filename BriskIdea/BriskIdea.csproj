@@ -183,7 +183,6 @@
     <Content Include="App\reference.js">
       <DependentUpon>reference.ts</DependentUpon>
     </Content>
-    <Content Include="App\viewmodels\flickr-js.js" />
     <TypeScriptCompile Include="App\viewmodels\tsctor.ts" />
     <TypeScriptCompile Include="App\viewmodels\shell.ts" />
     <TypeScriptCompile Include="App\viewmodels\flickr.ts" />

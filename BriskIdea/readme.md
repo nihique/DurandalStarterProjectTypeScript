@@ -1,4 +1,13 @@
-﻿# Introduction
+﻿# BriskIdea ReadMe
+
+## Introduction
+
+This is Durandal Started Project converted to use TypeScript 0.9
+
+
+# Durandal Starter Project ReadMe
+
+## Introduction
 
 Welcome to the Durandal Starter Project!
 
