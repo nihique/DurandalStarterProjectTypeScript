@@ -2,21 +2,19 @@ define(["require", "exports", 'durandal/system', '../model/person'], function(re
     var system = __system__;
     var person = __person__;
 
-    var Welcome = (function () {
-        function Welcome() {
+    var TsInstance = (function () {
+        function TsInstance() {
+            system.log('constructor()', this);
             this.displayName = 'Welcome';
             this.description = 'Description';
             this.features = ['feature1', 'feature2'];
             this.random = Math.round(Math.random() * 100);
             this.person = new person.Person('Martin', 'Kovarik');
         }
-        Welcome.prototype.activate = function () {
-            system.log('activate ts instance');
-        };
-        return Welcome;
+        return TsInstance;
     })();
-    exports.Welcome = Welcome;
+    exports.TsInstance = TsInstance;
 
-    return new Welcome();
+    return new TsInstance();
 });
 //@ sourceMappingURL=tsinstance.js.map

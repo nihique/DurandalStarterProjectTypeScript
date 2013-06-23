@@ -1,28 +1,34 @@
-﻿define(['durandal/http', 'durandal/app'], function (http, app) {
-    
-    return {
-        displayName: 'Flickr',
-        images: ko.observableArray([]),
-        activate: function () {
-            //the router's activator calls this function and waits for it to complete before proceding
-            if (this.images().length > 0) {
-                return;
-            }
+define(["require", "exports", 'durandal/http', 'durandal/app'], function(require, exports, __http__, __app__) {
+    var http = __http__;
+    var app = __app__;
 
-            var that = this;
-            return http.jsonp('http://api.flickr.com/services/feeds/photos_public.gne', { tags: 'mount ranier', tagmode: 'any', format: 'json' }, 'jsoncallback').then(function(response) {
-                that.images(response.items);
+    var Flickr = (function () {
+        function Flickr() {
+            this.displayName = 'Flickr';
+            this.images = ko.observableArray();
+        }
+        Flickr.prototype.activate = function () {
+            var _this = this;
+            if (this.images().length > 0)
+                return;
+            var query = { tags: 'mount ranier', tagmode: 'any', format: 'json' };
+            return http.jsonp('http://api.flickr.com/services/feeds/photos_public.gne', query, 'jsoncallback').then(function (response) {
+                return _this.images(response.items);
             });
-        },
-        select: function(item) {
-            //the app model allows easy display of modal dialogs by passing a view model
-            //views are usually located by convention, but you an specify it as well with viewUrl
+        };
+
+        Flickr.prototype.select = function (item) {
             item.viewUrl = 'views/detail';
             app.showModal(item);
-        },
-        canDeactivate: function () {
-            //the router's activator calls this function to see if it can leave the screen
+        };
+
+        Flickr.prototype.canDeactivate = function () {
             return app.showMessage('Are you sure you want to leave this page?', 'Navigate', ['Yes', 'No']);
-        }
-    };
+        };
+        return Flickr;
+    })();
+    exports.Flickr = Flickr;
+
+    return new Flickr();
 });
+//@ sourceMappingURL=flickr.js.map

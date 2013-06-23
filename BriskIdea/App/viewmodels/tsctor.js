@@ -7,6 +7,7 @@ define(["require", "exports"], function(require, exports) {
             this.features = ['feature1', 'feature2'];
         }
         Welcome.prototype.viewAttached = function (view) {
+            this.description = 'Description - viewAttached()';
         };
         return Welcome;
     })();

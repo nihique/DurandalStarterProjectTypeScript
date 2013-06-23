@@ -179,16 +179,30 @@
     <Content Include="App\model\person.js">
       <DependentUpon>person.ts</DependentUpon>
     </Content>
-    <Content Include="App\viewmodels\flickr.js" />
-    <Content Include="App\viewmodels\shell.js" />
+    <TypeScriptCompile Include="App\reference.ts" />
+    <Content Include="App\reference.js">
+      <DependentUpon>reference.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\flickr-js.js" />
     <TypeScriptCompile Include="App\viewmodels\tsctor.ts" />
+    <TypeScriptCompile Include="App\viewmodels\shell.ts" />
+    <TypeScriptCompile Include="App\viewmodels\flickr.ts" />
+    <Content Include="App\viewmodels\flickr.js">
+      <DependentUpon>flickr.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\shell.js">
+      <DependentUpon>shell.ts</DependentUpon>
+    </Content>
     <Content Include="App\viewmodels\tsctor.js">
       <DependentUpon>tsctor.ts</DependentUpon>
     </Content>
     <Content Include="App\viewmodels\tsinstance.js">
       <DependentUpon>tsinstance.ts</DependentUpon>
     </Content>
-    <Content Include="App\viewmodels\welcome.js" />
+    <TypeScriptCompile Include="App\viewmodels\welcome.ts" />
+    <Content Include="App\viewmodels\welcome.js">
+      <DependentUpon>welcome.ts</DependentUpon>
+    </Content>
     <Content Include="App\views\tsinstance.html" />
     <Content Include="App\views\tsctor.html" />
     <Content Include="App\views\detail.html" />
@@ -231,6 +245,18 @@
     </Content>
     <Content Include="App\bootstrapper.js.map">
       <DependentUpon>bootstrapper.ts</DependentUpon>
+    </Content>
+    <Content Include="App\reference.js.map">
+      <DependentUpon>reference.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\welcome.js.map">
+      <DependentUpon>welcome.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\shell.js.map">
+      <DependentUpon>shell.ts</DependentUpon>
+    </Content>
+    <Content Include="App\viewmodels\flickr.js.map">
+      <DependentUpon>flickr.ts</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
